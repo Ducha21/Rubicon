@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fa793e40-5434-49d9-83da-62202a82b4c1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/rts/customs/eclare/configuration/security/KafkaProducerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/rts/customs/eclare/configuration/security/KafkaProducerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/rts/customs/eclare/dto/body/CargoCtrlNoContentDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/rts/customs/eclare/dto/body/CargoCtrlNoContentDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/rts/customs/eclare/dto/body/ContainerNosDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/rts/customs/eclare/dto/body/ContainerNosDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/rts/customs/eclare/dto/body/ContentBaseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/rts/customs/eclare/dto/body/ContentBaseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/rts/customs/eclare/dto/body/CtdtBodyDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/rts/customs/eclare/dto/body/CtdtBodyDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/rts/customs/eclare/dto/body/CustomsInstructionsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/rts/customs/eclare/dto/body/CustomsInstructionsDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/rts/customs/eclare/dto/body/ElectronicAttachmentDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/rts/customs/eclare/dto/body/ElectronicAttachmentDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/rts/customs/eclare/dto/body/ExportGoodsItemDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/rts/customs/eclare/dto/body/ExportGoodsItemDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/rts/customs/eclare/dto/body/GoodsItemDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/rts/customs/eclare/dto/body/GoodsItemDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/rts/customs/eclare/dto/body/OtherTaxsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/rts/customs/eclare/dto/body/OtherTaxsDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/rts/customs/eclare/dto/body/PermitsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/rts/customs/eclare/dto/body/PermitsDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/rts/customs/eclare/dto/body/QuestionContentDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/rts/customs/eclare/dto/body/QuestionContentDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/rts/customs/eclare/dto/body/SignatureDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/rts/customs/eclare/dto/body/SignatureDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/rts/customs/eclare/dto/body/TransitInfosDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/rts/customs/eclare/dto/body/TransitInfosDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/rts/customs/eclare/dto/body/ValuationAdjustmentsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/rts/customs/eclare/dto/body/ValuationAdjustmentsDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/rts/customs/eclare/dto/body/VanningPlacesDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/rts/customs/eclare/dto/body/VanningPlacesDto.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectId" id="23tjySlfK2mwz2mGRy2VfCFfxZj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="vn.rts.customs.eclare.entity" />
+      <recent name="vn.rts.customs.eclare.dto.header" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="EtcCustomsEclareWebApiServletInitializer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="vn.rts.customs.eclare.EtcCustomsEclareWebApiServletInitializer" />
+      <module name="eclare-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="vn.rts.customs.eclare.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.EtcCustomsEclareWebApiServletInitializer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fa793e40-5434-49d9-83da-62202a82b4c1" name="Changes" comment="" />
+      <created>1642560535348</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1642560535348</updated>
+    </task>
+    <servers />
+  </component>
+</project>

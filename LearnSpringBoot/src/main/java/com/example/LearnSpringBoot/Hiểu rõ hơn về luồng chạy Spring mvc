@@ -1,0 +1,10 @@
+1.Tìm hiểu tầm quan trọng của dispatcher.
+2.Luồng yêu cầu cảu Spring mvc
+    - DispatcherServlet sẽ nhận HttpRequest
+    - DispatcherServlet sẽ xác định Controoller phù hợp dựa trên URL
+    - Sau đó Controller thực thi logic nghiệp vụ
+    - Controller trả về a) Model b) View Name Quay lại DispatcherServlet
+    - DispatcherServlet xác định chế độ xem chính xác (ViewResolver).
+    - DispatcherServlet làm cho mô hình có sẵn để xem và thực thi nó
+    - DispatcherServlet trả về HTTP Response Back
+    - Luồng: http://docs.spring.io/spring-framework/docs/2.0.8/reference/images/mvc.png

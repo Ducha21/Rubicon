@@ -1,0 +1,5 @@
+- Bước 1 : Xem trình phân giải trong todo-servlet.xml
+- Bước 2 : Cập nhật LoginController
+- Bước 3 : Xóa annotation @ResponseBody.
+- Bước 4 : tìm hiểu về View Resolver.
+

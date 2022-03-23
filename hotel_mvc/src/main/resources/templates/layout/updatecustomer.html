@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+    <form action="/editcustomer" method="post">
+        <div class="col-sm-9" style="margin: auto; padding: 20px;">
+            <div class="form-group">
+                <label class="form-label" for="id">ID</label
+                ><span class="text-danger">(*)</span>
+                <input
+                        type="text"
+                        class="form-control"
+                        name="id"
+                        id="id"
+                        th:value="${datacustomer.id}"
+                        readonly="readonly"
+                />
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="first_name">First name</label
+                ><span class="text-danger">(*)</span>
+                <input
+                        type="text"
+                        class="form-control"
+                        name="first_name"
+                        id="first_name"
+                        th:value="${datacustomer.firstName}"
+                />
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="first_name_furigana">First name furigana</label
+                ><span class="text-danger">(*)</span>
+                <input
+                        type="text"
+                        class="form-control"
+                        name="first_name_furigana"
+                        id="first_name_furigana"
+                        th:value="${datacustomer.firstNameFurigana}"
+                />
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="last_name">Last name</label
+                ><span class="text-danger">(*)</span>
+                <input
+                        type="text"
+                        class="form-control"
+                        name="last_name"
+                        id="last_name"
+                        th:value="${datacustomer.lastName}"
+                />
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="last_name_furigana">Last name furigana</label
+                ><span class="text-danger">(*)</span>
+                <input
+                        type="text"
+                        class="form-control"
+                        name="last_name_furigana"
+                        id="last_name_furigana"
+                        th:value="${datacustomer.lastName}"
+                />
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="postal_code">Postal code</label
+                ><span class="text-danger">(*)</span>
+                <input
+                        type="text"
+                        class="form-control"
+                        name="postal_code"
+                        id="postal_code"
+                        th:value="${datacustomer.postalCode}"
+                />
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="country">Country</label
+                ><span class="text-danger">(*)</span>
+                <input
+                        type="text"
+                        class="form-control"
+                        name="country"
+                        id="country"
+                        th:value="${datacustomer.country}"
+                />
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="pref_code">Pref code</label
+                ><span class="text-danger">(*)</span>
+                <input
+                        type="text"
+                        class="form-control"
+                        name="pref_code"
+                        id="pref_code"
+                        th:value="${datacustomer.prefCode}"
+                />
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="address">Address</label
+                ><span class="text-danger">(*)</span>
+                <input
+                        type="text"
+                        class="form-control"
+                        name="address"
+                        id="address"
+                        th:value="${datacustomer.address}"
+                />
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="building_name">Building name</label
+                ><span class="text-danger">(*)</span>
+                <input
+                        type="text"
+                        class="form-control"
+                        name="building_name"
+                        id="building_name"
+                        th:value="${datacustomer.buildingName}"
+                />
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="work_place">Work place</label
+                ><span class="text-danger">(*)</span>
+                <input
+                        type="text"
+                        class="form-control"
+                        name="work_place"
+                        id="work_place"
+                        th:value="${datacustomer.workPlace}"
+                />
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="email">Email</label
+                ><span class="text-danger">(*)</span>
+                <input
+                        type="text"
+                        class="form-control"
+                        name="email"
+                        id="email"
+                        th:value="${datacustomer.email}"
+                />
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="phone_number">Phone number</label
+                ><span class="text-danger">(*)</span>
+                <input
+                        type="text"
+                        class="form-control"
+                        name="phone_number"
+                        id="phone_number"
+                        th:value="${datacustomer.phoneNumber}"
+                />
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="birthday">Birthday</label
+                ><span class="text-danger">(*)</span>
+                <input
+                        type="date"
+                        class="form-control"
+                        name="birthday"
+                        id="birthday"
+                        th:value="${datacustomer.birthday}"
+                />
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="gender">Gender</label
+                ><span class="text-danger">(*)</span>
+                <input
+                        type="text"
+                        class="form-control"
+                        name="gender"
+                        id="gender"
+                        th:value="${datacustomer.gender}"
+                />
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="family_phone">Family phone</label
+                ><span class="text-danger">(*)</span>
+                <input
+                        type="text"
+                        class="form-control"
+                        name="family_phone"
+                        id="family_phone"
+                        th:value="${datacustomer.familyPhone}"
+                />
+            </div>
+            <div class="text-right" style="padding: 0px 10px 10px 0px;">
+                <a href="/customer" class="btn btn-success">Back</a>
+                <button
+                        type="submit"
+                        class="btn btn-success"
+                >
+                    Update
+                </button>
+
+            </div>
+        </div>
+    </form>
+
+    <!-- Footer -->
+    <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+                <span>Copyright &copy; Your Website 2021</span>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+</div>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jobform jobcode="CAM32_EDA" jobname="CAM32_EDA" display-name="EDA Pre-registration of export declaration">
+  <meta_info format_Version="1.0" revision="0000" friday="VAE4000.xml" item_attr_edit="True" />
+  <friday href="VAE4000.xml" revision="0000" />
+  <iteminfo>
+    <item id="declarationKindCode" name="Mã Loại Hình" required="M" attribute="A" figure="3" />
+	<item id="cargoClassificationCode" name="Mã phân loại hàng hóa " required="C" attribute="A" figure="1"/>
+    <item id="customsOffice" name="Cơ quan Hải quan" required="F" attribute="A" figure="6" />
+	<item id="classificationIndividualOrganization" name="Phân loại cá nhân/tổ chức" required="M" attribute="A" figure="1"/>
+    <item id="declarationPlannedDate" name="Ngày khai báo (dự kiến)" required="F" attribute="D" figure="8" />
+	<item id="customsSubSection" name="Mã bộ phận xử lý tờ khai- Mã đội thủ tục" required="F" attribute="A" figure="2"/>
+    <item id="timeLimitReExport" name="Thời hạn tái xuất khẩu" required="C" attribute="D" figure="8" />
+	<item id="meansOfTransportationCode" name="Mã hiệu phương thức vận chuyển" required="M" attribute="A" figure="1"/>
+    <item id="importerCode" name="Mã người nhập khẩu" required="F" attribute="A" figure="13" />
+	<item id="importerName" name="Tên người nhập khẩu" required="F" attribute="A" figure="100"/>
+    <item id="importerPostCode" name="Mã bưu chính" required="C" attribute="A" figure="7" />
+	<item id="importerAddress" name="Địa chỉ người nhập khẩu" required="F" attribute="V" figure="100"/>
+    <item id="importerTelephone" name="Số điện thoại người nhập khẩu" required="F" attribute="A" figure="20" />
+	<item id="importContractorCode" name="Mã người ủy thác nhập khẩu" required="C" attribute="A" figure="13"/>
+    <item id="importContractorName" name="Tên người ủy thác nhập khẩu" required="F" attribute="A" figure="100" />
+	<item id="exporterCode" name="Mã người xuất khẩu" required="C" attribute="A" figure="13"/>
+	<item id="exporterName" name="Tên người xuất khẩu" required="F" attribute="A" figure="70" />
+	<item id="exporterPostCode" name="Mã bưu chính người xuất khẩu" required="C" attribute="A" figure="9"/>
+    <item id="exporterAddress1" name="Địa chỉ 1" required="F" attribute="V" figure="35" />
+	<item id="exporterAddress2" name="Địa chỉ 2" required="C" attribute="V" figure="1"/>
+    <item id="exporterAddress3" name="Địa chỉ 3" required="C" attribute="V" figure="8" />
+	<item id="exporterAddress4" name="Địa chỉ 4" required="C" attribute="V" figure="2"/>
+    <item id="countryCode" name="Mã nước" required="C" attribute="A" figure="2" />
+	<item id="exportConsignerName" name="Tên người ủy thác xuất khẩu" required="C" attribute="A" figure="70"/>
+    <item id="agentCode" name="Mã đại lý hải quan" required="F" attribute="A" figure="5" />
+	<item id="totalCargoPiece" name="Số lượng" required="M" attribute="N" figure="8"/>
+    <item id="totalPieceUnitCode" name="Mã đơn vị tính kiện hàng" required="M" attribute="A" figure="3" />
+	<item id="totalWeightGross" name="Tổng trọng lượng hàng" required="C" attribute="N" figure="10"/>
+    <item id="totalWeightUnitCode" name="Mã đơn vị tính trọng lượng" required="C" attribute="A" figure="3" />
+	<item id="customsWarehouseCode" name="Mã địa điểm lưu kho hàng chờ thông quan dự kiến" required="C" attribute="A" figure="7"/>
+    <item id="marksNumbers" name="Ký hiệu và số hiệu" required="C" attribute="A" figure="140" />
+	<item id="loadingVesselCode" name="Phương tiện vận chuyển " required="C" attribute="A" figure="9"/>
+	<item id="loadingVesselName" name="Tên phương tiện vận chuyển" required="C" attribute="A" figure="35" />
+	<item id="arrivalDate" name="Ngày hàng đến" required="M" attribute="D" figure="8"/>
+    <item id="unloadingPortCode" name="Địa điểm dỡ hàng" required="C" attribute="A" figure="6" />
+	<item id="unloadingPortName" name="Tên Địa điểm dỡ hàng" required="F" attribute="A" figure="35"/>
+    <item id="loadingPortCode" name="Địa điểm xếp hàng" required="M" attribute="A" figure="5" />
+	<item id="loadingPortName" name="Tên Địa điểm xếp hàng" required="F" attribute="A" figure="35"/>
+    <item id="numberContainers" name="Số lượng container" required="C" attribute="N" figure="3" />
+	<item id="resultInspectionCode" name="Mã kết quả kiểm tra nội dung" required="C" attribute="A" figure="1"/>
+    <item id="processContractNo" name="Số Hợp đồng GC" required="C" attribute="A" figure="35" />
+	<item id="processContractDate" name="Ngày hợp đồng GC" required="C" attribute="D" figure="8"/>
+    <item id="invoiceClassificationCode" name="Phân loại hình thức hóa đơn" required="M" attribute="A" figure="1" />
+	<item id="electronicInvoiceRefNo" name="Số tiếp nhận hóa đơn điện tử" required="C" attribute="A" figure="12"/>
+    <item id="invoiceNo" name="Số hóa đơn" required="C" attribute="A" figure="35" />
+	<item id="invoiceDate" name="Ngày phát hành" required="C" attribute="D" figure="8"/>
+    <item id="termOfPayment" name="Phương thức thanh toán" required="C" attribute="A" figure="7" />
+	<item id="invoicePriceKindCode" name="Mã phân loại giá hóa đơn" required="C" attribute="A" figure="1"/>
+  </iteminfo>
+</jobform>

@@ -1,0 +1,78 @@
+Thread and Exception
+1. Exceptions
+    + Exceptions (Ngoại lệ)
+        - Exceptions là một sự kiện chỉ xảy ra trong quá trình Java khi nó thực thi
+            hay nói cách khác là chương trình sẽ ngừng lại và xuất hiện thông báo lỗi
+
+    + Exception Class (Lớp ngoại lệ)
+        - Exception Class được chia làm 2 nhóm chung
+            + các ngoại lệ Runtime như ArrayIndexOutOfBoundsException, ...
+            + các ngoại lệ EOFException và MalformeURLException
+
+    + Managing Exceptions
+
+    + Exception Consistency Checking (kiểm tra tính nhất quán của ngoại lệ)
+        - kiểm tra tính nhất quán để chương tình có khả năng gặp sự cố với các lỗi nghiêm trọng ít hơn.
+        - Lý do: là người dùng biết trước các ngọai lệ có thể đưa ra bởi các phương thức mà chương trình chạy
+
+    + Protecting Code and Catching Exceptions
+        - sử dụng try catch để bắt giữ các ngoại lệ
+
+    + The finally Clause
+        - là thực hiện các đoạn mã dù có xảy ra try catch hay không. Ví dụ khi thao tác với file thì đã mở file là bắt buộc phải đóng file thì
+            khi đấy hành động đóng file là bắt buộc phải làm
+
+    + Declaring Methods That Might Throw Exceptions (khai báo các phương thức có thể ném ra các ngoại lệ)
+        -  Để chỉ ra một phương thức có thẻ ném ra 1 ngoại lệ thì sử dụng methods là throws
+
+    + The throws Clause (Mệnh đề throws)
+        - cú pháp khai báo một mệnh đề throws là:
+        public <kiểu dữ liệu> functions() throws <class exceptions1>, <class exceptions2>{
+
+        }
+
+    + Which Exceptions Should You Throw? (Những trường hợp ngoại lệ nào bạn nên ném)
+        - Có 2 loại Exceptions:
+            + Checked Exception: là các lỗi được phát hiện khi chương trình biên dịch cụ thể các lỗi
+                như lỗi cú pháp, ... và khi đó bắt bụôc ohri thực hiện catch để sửa lỗi
+            + Unchecked Exception: là các lỗi xảy ra khi chương trình đang chạy. Thừong là các lỗi logic
+                sẽ dẫn đến Exception.
+        - Các ngoại lệ thường được sử dụng:
+            + ArithmeticException: dùng để bắt các ngoại lệ đã xảy ra trong một phép toán
+            + ArrayIndexOutOfBoundsException: Nó được ném ra để chỉ ra một mảng được lưu với chỉ mục bất hợp phát.
+                ví dụ mảng a chỉ có 7 phần tử mà khai báo a[8] = 10 thì khi này chỉ mục thứ 8 không đúng so với mảng 7 phần tử
+            + ClassNotFoundException: ngoại lệ được đưa ra khi cố truy cập vào một lớp không tồn tại
+            + IOException: Ném ra khi hoạt động đầu vào đầu ra không thành công hoặc bị gián đoạn
+            + NoSuchFiedException: Ném ra khi một lớp không chứa trường hoặc biến được chỉ định
+            + NullPointerException: ném ra khi mà các thành viên của một đối tượng bị null
+            + NumberFormatException: ngoại lệ xảy ra khi mà chuyển đổi một chuỗi thành dạng số mà không thành công. ví dụ chuỗi ABC khi đổi sang dạng số thì không thành công
+                trong đó chuỗi 123 khi chuyển từ chuỗi san số thì thành công.
+            + RuntimeException: Ngoiaj lệ này được ném ra trong thời gian chạy.
+            + StringIndexOutOfBou
+
+    + Throws and Inherritance
+        - được hiểu là khi 1 class con kế thừa 1 lớp cha có các ngoại lệ thì lớp con sẽ không được tạo thêm ngoại lệ hoặc ngoại lệ có các kiểu khác nhau họăc là các lớp ngoại lệ
+        chung chung không rõ ràng so với phương thức của lớp cha.
+
+    + Creating and Throwing Exceptions (cách tạo và ném ra các ngoại lệ)
+    + Throwing Exceptions
+    + Creating Your Own Exceptions
+    + Combining throws, try, and throw
+    + When Not to Use Exceptions (khi nào nên và không nên sử dụng ngoại lệ)
+
+2. Threads
+package Ngay06012022.ExceptionsAndThread;
+
+public class WritingAThread {
+    public static void main(String[] args) {
+        try{
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+}
+khi muốn dừng thực thi thì sẽ sinh ra một ngoai lệ là InterruptedException (ngoại lệ được ném ra khi tạm dừng chương trình)
+
+- để chạy chương trình thread thì cần kế thừa từ Thread họăc là implement Runnable
+- để bắt đầu chạy luồng thì gọi phương thức start(), thì khi gọi đến phương thức start chương trình sẽ gọi đến phương thức run để chạy

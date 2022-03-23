@@ -1,0 +1,117 @@
+### 1.CONFIG: PORT, CONTEXT PATH ###
+#server.servlet.context-path: /zuul
+server:
+   port: ${PORT:8060}
+   error:
+      include-message: always
+###2. CONFIG: SPRING, SPRING ADMIN ###
+spring:
+   application:
+      name: ${APP_NAME:ECLARE-API}
+   kafka:
+      producer:
+         bootstrap-servers: ${KAFKA_SERVER:10.0.222.54:9092}
+         topic-tcp-declare-id: ${KAFKA_DECLARE_TOPIC_ID:tcp-declare-test}
+         topic-tcp-question-id: ${KAFKA_QUESTION_TOPIC_ID:tcp-question-test}
+         topic-tcp-priority-org: ${KAFKA_PRIORITY_ORG_ID:tcp-priority-org-test}
+         key-serializer: org.apache.kafka.common.serialization.StringSerializer
+         value-serializer: org.apache.kafka.common.serialization.StringSerializer
+         max-request-size: 4194304
+   datasource:
+      url: jdbc:oracle:thin:@${DB_DATASOURCE:10.0.222.29:1521/CCS4DB}
+      username: ${DB_USERNAME:CCS4EO_DEV}
+      password: ${DB_PASSWORD:CCS4EO_DEV}
+      driver-class-name: oracle.jdbc.OracleDriver
+   jpa:
+      properties:
+         hibernate:
+            dialect: org.hibernate.dialect.Oracle12cDialect
+            proc:
+               param_null_passing: true
+      show-sql: true
+      hibernate:
+         ddl-auto: update
+### 3. CONFIG: MANAGEMENT ###
+#https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.2.0-M3-Release-Notes#actuator-http-trace-and-auditing-are-disabled-by-default
+#management.security.enabled=false
+#management.endpoints.web.cors.allowed-origins=https://example.com
+#management.endpoints.web.cors.allowed-methods=GET,POST
+#management.shutdown.enabled=true
+management:
+   endpoints:
+      enabledByDefault: true
+      web:
+         exposure:
+            include: '*'
+         cors:
+            allowed-origins: '*'
+            allowed-methods: '*'
+   health:
+      mail:
+         enabled: false
+      kafka:
+         enabled: false
+   auditevents:
+      enabled: true
+   trace:
+      http:
+         enabled: true
+### 4. CONFIG: LOGGING ###
+logging:
+   file:
+      name: logs/${spring.application.name}.log
+      max-size: 1MB
+      max-history: 2
+   level:
+      org:
+         hibernate:
+            SQL: DEBUG
+            type:
+               descriptor:
+                  sql:
+                     BasicBinder: TRACE
+### 5. CONFIG: EUREKA ###
+#eureka.instance.leaseRenewalIntervalInSeconds: 10
+#eureka.client.registryFetchIntervalSeconds: 5
+eureka:
+   client:
+      enabled: true
+      registryFetchIntervalSeconds: 5
+      serviceUrl:
+         defaultZone: ${REGISTRY_EUREKA_SERVER_URL:http://localhost:8761}/eureka/
+   instance:
+      preferIpAddress: true
+      #ipAddress: ${KUBERNETES_SERVER_IP:10.0.222.33}
+#zuul:
+#   allowedOrigins: '*'
+### 5. CONFIG: CUSTOM ###
+app:
+   current-app:
+      api-key: ${API_KEY:19001000}
+      check-api-key-for-external-api: '#'
+      app-code: ECLARE
+      app-name: ECLARE
+      file_max_length: 2097152
+      file_extension_allowed: pdf
+      file_auto_check_file_upload: true
+   guava-cache:
+      expire-after-write-minutes-category-common: 2
+      maximum-size-category-common: 5000
+      menu-back-end-by-jwt-expire-after-write-minutes: 60
+      menu-back-end-by-jwt-maximum-size: 5000
+   paging:
+      default-page-number: 0
+      default-page-size: 20
+      max-page-size: 100
+   restapi:
+      api-url-auth: ${ETC_CUSTOMS_AUTH_WEBAPI_API_URL:http://10.0.222.31/gateway/entiam/api/auth}
+      api-key-auth: ${ETC_CUSTOMS_AUTH_WEBAPI_API_KEY:19001000}
+      api-url-category-common: ${ETC_CUSTOMS_CATEGORY_WEBAPI_API_URL:http://10.0.222.58/gateway/entiam/}
+      api-key-category-common: ${ETC_CUSTOMS_CATEGORY_WEBAPI_API_KEY:19001000}
+      api-url-file-attach: http://10.0.222.58/gateway/webapi-file-attach/
+      api-key-file-attach: 19001000
+      close-idle-connections-in-ms: 180000
+      connect-timeout-in-ms: 60000
+      connection-manager-shutdown-in-ms: 300000
+      max-connection: 1000
+      max-per-route: 100

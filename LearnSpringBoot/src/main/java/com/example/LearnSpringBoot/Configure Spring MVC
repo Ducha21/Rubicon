@@ -1,0 +1,11 @@
+Objective : Configure Spring MVC
+- Trước khi bắt đầu với luồng,chúng ta cần định cấu hình ứng dụng để sử dụng Spring MVC
+    + Hãy thực hiện một chút Refactoring.Đổi tên gói webapp thành com.in28minutes.jee
+    + Chúng ta cần Spring MVC Framework và các phụ thuộc của nó.Sau đó thêm các required jars cần thiết vào project.
+    + Spring MVC sử dụng Front Controller Pattem->Dispatcher Servlet.Sau đó,Thêm Dispatcher Servlet vào web.xml.
+    + DispatcherServlet cần một Spring Application Context để khởi chạy.Chúng tôi sẽ tạo một (/WEB-INF/todo-servlet.xml).Sau đó,thêm Spring Context.
+
+Flow:
+    Flow1 : Từ Login Servlet->GET->login.jsp
+    Flow2 : Đăng nhập Servlet - >Đăng nhập(Thành công)->welcome.jsp
+    Flow3 : Đăng nhâp Servlet ->Đăng nhập(thành công)->login.jsp(có thông báo lỗi).

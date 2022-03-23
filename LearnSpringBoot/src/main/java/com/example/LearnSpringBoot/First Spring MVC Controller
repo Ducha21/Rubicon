@@ -1,0 +1,11 @@
+- Bước 1:Sử dụng anotation RequestMapping(value = "login",method = RequestMethod.GET)
+- Bước 2 : Đường dẫn http://localhost:8080/spring-mvc/login.
+- Bước 3 : web.xml - /spring-mvc/*
+- Bước 4 : tại sao sử dụng annotation ResponseBody?
+    + Có thể thấy annotation ResponeBody nói cho MVC biết không render một model vào trong view mà phải trả về đối tượng nào trong body.
+    Spring sẽ tự động convert đối tượng này sang JSON sử dụng jackson2.Nói đơn giản là annotation ResponseBody sẽ giúp bạn convert đối
+    tượng trả về thành chuỗi json thì vì dùng 1 thư viện nào để convert.
+    + Còn ResquetBody : Nghĩa là khi bạn gửi lên json data annotation RequestBody sẽ nói cho Spring convert json data đó
+    thành đối tượng user và sử dụng bình thường.
+- Tầm quan trọng của method RequestMapping:được sử dụng để ánh xạ các yêu cầu của web tới các phương thức ở Controller.
+-Không thể có nhiều url được hiển thị từ cùng một Bộ điều khiển.
